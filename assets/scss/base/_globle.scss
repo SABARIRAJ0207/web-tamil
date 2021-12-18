@@ -5,6 +5,10 @@
     
 }
 
+.text-uppercase{
+    text-transform: uppercase;
+}
+
 .color-anim{
     animation: color-change 10s infinite;
     transition: 500ms;

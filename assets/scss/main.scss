@@ -3,18 +3,25 @@
 @import "./base/reset";
 @import "./base/globle";
 
-//utilities
 
-@import "./utilities/animation";
 
 //components
 
 @import "./components/button";
+@import "./components/badges";
 
 
 
 //layouts
 @import "./layouts/header";
+@import "./layouts/background";
+
+//utilities
+
+
+@import "./utilities/animation";
+@import "./utilities/spacing";
 
 
 //pages
+@import "./pages/home";

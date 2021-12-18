@@ -1,0 +1,49 @@
+$spacing: 1,2,3,4,5,6,7,8,9,10,12,14,16,18,20;
+
+$direction:top,right,bottom,left;
+
+
+@each $space in $spacing{
+    
+    // creating margin utilities
+
+    .m-#{$space}{
+        margin: #{$space}rem !important;
+    }
+
+
+// creating padding utilities
+    .p-#{$space}{
+        padding: #{$space}rem !important;
+    }
+
+    @each $direction in $direction {
+        //creating margin utilities for all directin
+        
+        .m#{str-slice($direction, 0, 1)}-#{$space} {
+            margin-#{$direction}:#{$space}rem !important;
+        }
+
+        //creating padding utilities for all directin
+        .p#{str-slice($direction, 0, 1)}-#{$space} {
+            padding-#{$direction}:#{$space}rem !important;
+        }
+    }
+
+}
+
+
+// for creating space-x space-y values
+
+$space-axis-value: 1, 2, 3, 4, 5;
+
+$space-axis-key:"x" "right", "y" "bottom";
+
+@each $space-axis in $space-axis-value {
+
+    @each $key, $value in $space-axis-key {
+        .space-#{$key}-#{$space-axis} > *{
+            margin-#{$value}: #{$space-axis}rem;
+        }
+    }
+}
