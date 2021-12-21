@@ -13,3 +13,13 @@
     animation: color-change 10s infinite;
     transition: 500ms;
 }
+
+.line{
+    background-color: cyan;
+    width: 6rem;
+    height: 0.5rem;
+    border-radius: 6px;
+    margin: 30px auto;
+    background: linear-gradient(to right, #e24997, #2d2ed4);
+
+}

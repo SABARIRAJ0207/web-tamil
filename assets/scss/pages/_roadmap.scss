@@ -1,0 +1,127 @@
+@use "../abstract/variable" as var;
+@use "../abstract/function" as func;
+
+.roadmap{
+    padding: 8rem 10rem;
+
+    &-heading{
+        text-align: center;
+        h5{
+font-size: 2rem;
+        }
+
+        p{
+            color: gray;
+        }
+    }
+
+    &-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+
+    }
+
+    &-item{
+        transition: 500ms;
+        position: relative;
+        text-align: center;
+        padding: 3rem 1rem;
+        cursor: pointer;
+        max-width: 350px;
+        filter: grayscale(100%);
+        margin-left: 3rem;
+       
+        &:hover &-img::after{
+            animation: rotate-infinite 4000ms linear infinite;
+        }
+        &-img{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 30px;
+           
+
+            img{
+                width: 60px;
+                margin-top: 25px;
+
+            }
+
+            &::after{
+                position: absolute;
+                top: 0;
+                left: -5px;
+
+                content: "";
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                border: 5px dotted func.theme-color();
+            }
+
+        }
+        &-content{
+            margin-top: 2rem;
+            h5{
+                font-size: 1.5rem;
+                font-weight: 600;
+            
+            }
+
+            p{
+                color: gray;
+                line-height: 1.5;
+            }
+        }
+
+        &:not(:last-child)::before{
+            transition: 500ms;
+            position: absolute;
+            top: 35%;
+            right: -30%;
+            content: "";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 600;
+            font-size: 3rem;
+            width: 70px;
+            height: 70px;
+            color: #020702;
+            z-index: 1;
+            line-height: 1;
+
+        }
+
+        &:hover:not(:last-child)::before{
+            right: -32%;
+            color: func.theme-color();
+        }
+
+        &:hover:last-child::after{
+            position: absolute;
+            top: 35%;
+            right: -30%;
+            content: "😊👍";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 600;
+            font-size: 3rem;
+            
+            color: func.theme-color();
+            z-index: 1;
+            line-height: 1;
+
+
+            
+        }
+
+        &:hover h5{
+            color: func.theme-color();
+        }
+        &:hover{
+            filter: grayscale(0%);
+        }
+
+    }
+
+}
