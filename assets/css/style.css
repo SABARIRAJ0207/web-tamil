@@ -895,7 +895,7 @@ a {
 }
 
 .hero-area {
-  padding: 8rem 10rem;
+  padding: 4rem 10rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -943,7 +943,7 @@ a {
 }
 
 .roadmap {
-  padding: 8rem 10rem;
+  padding: 4rem 10rem;
 }
 .roadmap-heading {
   text-align: center;
@@ -1040,6 +1040,60 @@ a {
 }
 .roadmap-item:hover {
   filter: grayscale(0%);
+}
+
+.course {
+  padding: 4rem 10rem;
+  background-color: #3f43fd;
+}
+.course-heading {
+  text-align: center;
+}
+.course-heading h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+.course-heading p {
+  color: #dfdfdf;
+}
+.course-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.course-card {
+  background-color: #fff;
+  max-width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.course-card-img {
+  width: 300px;
+}
+.course-card-body {
+  padding: 2rem;
+}
+.course-card-body h4 {
+  font-size: 1.5rem;
+}
+.course-card-body p {
+  color: gray;
+  line-height: 1.5;
+}
+.course-card a {
+  color: rgba(0, 0, 0, 0.904);
+}
+.course-card:hover {
+  box-shadow: 2px 2px 20px 5px rgba(41, 41, 41, 0.5);
+}
+.course-info {
+  text-align: center;
+  color: whitesmoke;
+}
+.course-info a {
+  color: #fff;
+}
+.course-info a:hover {
+  text-shadow: 2px 2px 10px black;
 }
 
 /*# sourceMappingURL=style.css.map */
