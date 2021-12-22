@@ -1,13 +1,20 @@
 @use "../abstract/variable" as var;
 @use "../abstract/function" as func;
+@use "../abstract/mixin" as mixin;
 
 .about-area{
-    padding: 8rem 10rem;
+    padding: 8rem 20rem;
     background-color: func.theme-color();
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 11rem;
+
+    @include mixin.responsive(xs){
+        padding: 4rem 2rem;
+        flex-direction: column;
+        margin-top: 0;
+    }
 
     &-img{
         width: 32rem;
@@ -17,12 +24,28 @@
 
         color: #fff;
 
+        @include mixin.responsive(xs){
+            margin: 0;
+        }
+
+
             h2{
                 font-size: 3rem;
+
+                @include mixin.responsive(xs){
+                    font-size: 1.5rem;
+                }
+
+
             }
             p{
                 line-height: 2;
                 color: rgb(204, 204, 204);
+
+                @include mixin.responsive(xs){
+                    font-size: 0.9rem;
+                }
+
                 a{
                     color: white;
 

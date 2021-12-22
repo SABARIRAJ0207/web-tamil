@@ -1,18 +1,51 @@
 @use "../abstract/variable" as var;
 @use "../abstract/function" as func;
+@use "../abstract/mixin" as mixin;
+
 
 .header{
-    padding: 1rem 15rem;
+    padding: 1rem 20rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #eee;
+
+@include mixin.responsive(xs) {
+    //css code
+
+    padding: 1rem 2rem;
+    
+}
+
+h2 > span{
+    @include mixin.responsive(xs) {
+        font-size: 1rem;
+    }
+
+
+}
+
+.nav-toggler{
+
+    display: none;
+    @include mixin.responsive(xs) {
+
+        display: block;
+        font-size: 1.3rem;
+        
+    }
+    
+}
 
     &-menu {
         display: flex;
         list-style: none;
         align-items: center;
         text-transform: uppercase;
+
+        @include mixin.responsive(xs){
+            display: none;
+        }
 
         &-item > a {
             margin-right: 1.5rem;

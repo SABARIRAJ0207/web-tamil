@@ -1,5 +1,5 @@
 @use "../abstract/function" as func;
-
+@use "../abstract/mixin" as mixin;
 
 footer{
     padding: 2rem 0;
@@ -7,8 +7,17 @@ footer{
     text-align: center;
     color: white;
 
+    h2{
+        @include mixin.responsive(xs){
+font-size: 1.2rem;
+        }
+    }
+
     p{
         color: #e8e8e8;
+        @include mixin.responsive(xs){
+            font-size: 0.9rem;
+                    }
     }
 
     a{

@@ -1,4 +1,10 @@
+@use  "../abstract/mixin" as mixin;
+
 .background-shapes{
+
+    @include mixin.responsive(xs){
+        display: none;
+    }
     .box1{
         position: absolute;
         top: 20%;

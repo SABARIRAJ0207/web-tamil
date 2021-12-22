@@ -33,6 +33,15 @@ a {
   background: linear-gradient(to right, #e24997, #2d2ed4);
 }
 
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+
 .btn, .btn-primary-outline, .btn-primary {
   padding: 0.8rem 1.6rem;
   border-radius: 6px;
@@ -90,17 +99,41 @@ a {
 }
 
 .header {
-  padding: 1rem 15rem;
+  padding: 1rem 20rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #eee;
+}
+@media only screen and (max-width: 576px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .header h2 > span {
+    font-size: 1rem;
+  }
+}
+.header .nav-toggler {
+  display: none;
+}
+@media only screen and (max-width: 576px) {
+  .header .nav-toggler {
+    display: block;
+    font-size: 1.3rem;
+  }
 }
 .header-menu {
   display: flex;
   list-style: none;
   align-items: center;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 576px) {
+  .header-menu {
+    display: none;
+  }
 }
 .header-menu-item > a {
   margin-right: 1.5rem;
@@ -116,6 +149,11 @@ a {
   color: #3f43fd;
 }
 
+@media only screen and (max-width: 576px) {
+  .background-shapes {
+    display: none;
+  }
+}
 .background-shapes .box1 {
   position: absolute;
   top: 20%;
@@ -252,8 +290,18 @@ footer {
   text-align: center;
   color: white;
 }
+@media only screen and (max-width: 576px) {
+  footer h2 {
+    font-size: 1.2rem;
+  }
+}
 footer p {
   color: #e8e8e8;
+}
+@media only screen and (max-width: 576px) {
+  footer p {
+    font-size: 0.9rem;
+  }
 }
 footer a {
   color: #fff;
@@ -942,10 +990,16 @@ footer .legal {
 }
 
 .hero-area {
-  padding: 4rem 10rem;
+  padding: 8rem 20rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+@media only screen and (max-width: 576px) {
+  .hero-area {
+    padding: 4rem 2rem;
+    flex-direction: column;
+  }
 }
 .hero-area-contants {
   max-width: 34rem;
@@ -954,20 +1008,40 @@ footer .legal {
   font-size: 3rem;
   font-weight: 600;
 }
+@media only screen and (max-width: 576px) {
+  .hero-area-title {
+    font-size: 2rem;
+  }
+}
+.hero-area-title > span {
+  font-size: 1.5rem;
+}
 .hero-area-desc {
   margin-top: 2rem;
   font-size: 1.2rem;
   line-height: 1.8;
   color: grey;
 }
+@media only screen and (max-width: 576px) {
+  .hero-area-desc {
+    font-size: 0.9rem;
+  }
+}
 
 .about-area {
-  padding: 8rem 10rem;
+  padding: 8rem 20rem;
   background-color: #3f43fd;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 11rem;
+}
+@media only screen and (max-width: 576px) {
+  .about-area {
+    padding: 4rem 2rem;
+    flex-direction: column;
+    margin-top: 0;
+  }
 }
 .about-area-img {
   width: 32rem;
@@ -975,12 +1049,27 @@ footer .legal {
 .about-area-contents {
   color: #fff;
 }
+@media only screen and (max-width: 576px) {
+  .about-area-contents {
+    margin: 0;
+  }
+}
 .about-area-contents h2 {
   font-size: 3rem;
+}
+@media only screen and (max-width: 576px) {
+  .about-area-contents h2 {
+    font-size: 1.5rem;
+  }
 }
 .about-area-contents p {
   line-height: 2;
   color: #cccccc;
+}
+@media only screen and (max-width: 576px) {
+  .about-area-contents p {
+    font-size: 0.9rem;
+  }
 }
 .about-area-contents p a {
   color: white;
@@ -990,7 +1079,12 @@ footer .legal {
 }
 
 .roadmap {
-  padding: 4rem 10rem;
+  padding: 8rem 20rem;
+}
+@media only screen and (max-width: 576px) {
+  .roadmap {
+    padding: 4rem 2rem;
+  }
 }
 .roadmap-heading {
   text-align: center;
@@ -1006,6 +1100,11 @@ footer .legal {
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
+}
+@media only screen and (max-width: 576px) {
+  .roadmap-items {
+    flex-direction: column;
+  }
 }
 .roadmap-item {
   transition: 500ms;
@@ -1066,6 +1165,13 @@ footer .legal {
   z-index: 1;
   line-height: 1;
 }
+@media only screen and (max-width: 576px) {
+  .roadmap-item:not(:last-child)::before {
+    content: "\f107";
+    top: 90%;
+    left: 35%;
+  }
+}
 .roadmap-item:hover:not(:last-child)::before {
   right: -32%;
   color: #3f43fd;
@@ -1076,11 +1182,17 @@ footer .legal {
   right: -30%;
   content: "😊👍";
   font-family: "Font Awesome 5 Free";
-  font-weight: 600;
+  font-weight: 400;
   font-size: 3rem;
   color: #3f43fd;
   z-index: 1;
   line-height: 1;
+}
+@media only screen and (max-width: 576px) {
+  .roadmap-item:hover:last-child::after {
+    top: 90%;
+    left: -20%;
+  }
 }
 .roadmap-item:hover h5 {
   color: #3f43fd;
@@ -1090,8 +1202,13 @@ footer .legal {
 }
 
 .course {
-  padding: 4rem 10rem;
+  padding: 8rem 20rem;
   background-color: #3f43fd;
+}
+@media only screen and (max-width: 576px) {
+  .course {
+    padding: 4rem 2rem;
+  }
 }
 .course-heading {
   text-align: center;
@@ -1100,21 +1217,36 @@ footer .legal {
   font-size: 2rem;
   color: #fff;
 }
+@media only screen and (max-width: 576px) {
+  .course-heading h2 {
+    font-size: 1.5rem;
+  }
+}
 .course-heading p {
   color: #dfdfdf;
+}
+@media only screen and (max-width: 576px) {
+  .course-heading p {
+    font-size: 0.9rem;
+  }
 }
 .course-cards {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 576px) {
+  .course-cards {
+    flex-direction: column;
+  }
+}
 .course-card {
   background-color: #fff;
-  max-width: 300px;
+  max-width: 380px;
   border-radius: 10px;
   overflow: hidden;
 }
 .course-card-img {
-  width: 300px;
+  width: 380px;
 }
 .course-card-body {
   padding: 2rem;
@@ -1122,9 +1254,19 @@ footer .legal {
 .course-card-body h4 {
   font-size: 1.5rem;
 }
+@media only screen and (max-width: 576px) {
+  .course-card-body h4 {
+    font-size: 1.3rem;
+  }
+}
 .course-card-body p {
   color: gray;
   line-height: 1.5;
+}
+@media only screen and (max-width: 576px) {
+  .course-card-body p {
+    font-size: 0.9rem;
+  }
 }
 .course-card a {
   color: rgba(0, 0, 0, 0.904);
@@ -1144,8 +1286,13 @@ footer .legal {
 }
 
 .contact {
-  padding: 4rem 10rem;
+  padding: 8rem 20rem;
   background-color: #c4c4c4;
+}
+@media only screen and (max-width: 576px) {
+  .contact {
+    padding: 4rem 1rem;
+  }
 }
 .contact-card {
   background-color: white;
@@ -1155,14 +1302,31 @@ footer .legal {
   padding: 2rem 3rem;
   border-radius: 0.5rem;
 }
+@media only screen and (max-width: 576px) {
+  .contact-card {
+    flex-direction: column;
+    padding: 2rem;
+    align-items: initial;
+  }
+}
 .contact-card-contant {
   flex-grow: 1;
 }
 .contact-card-contant h4 {
   font-size: 1.2rem;
 }
+@media only screen and (max-width: 576px) {
+  .contact-card-contant h4 {
+    font-size: 1rem;
+  }
+}
 .contact-card-contant p {
   color: gray;
+}
+@media only screen and (max-width: 576px) {
+  .contact-card-contant p {
+    font-size: 0.9rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
