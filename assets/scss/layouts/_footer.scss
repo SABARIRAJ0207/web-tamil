@@ -9,7 +9,11 @@ footer{
 
     h2{
         @include mixin.responsive(xs){
-font-size: 1.2rem;
+            font-size: 1.2rem;
+        }
+
+        @include mixin.responsive(sm){
+            font-size: 1.2rem;
         }
     }
 
@@ -17,7 +21,10 @@ font-size: 1.2rem;
         color: #e8e8e8;
         @include mixin.responsive(xs){
             font-size: 0.9rem;
-                    }
+        }
+        @include mixin.responsive(sm){
+            font-size: 0.9rem;
+         }           
     }
 
     a{

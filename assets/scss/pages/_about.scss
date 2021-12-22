@@ -15,9 +15,19 @@
         flex-direction: column;
         margin-top: 0;
     }
+    @include mixin.responsive(sm){
+        padding: 4rem 2rem;
+        flex-direction: column;
+        margin-top: 0;
+        // align-items: initial;
+    }
 
     &-img{
         width: 32rem;
+        @include mixin.responsive(sm){
+            width: 20rem;
+        }
+
     }
 
     &-contents{
@@ -25,6 +35,10 @@
         color: #fff;
 
         @include mixin.responsive(xs){
+            margin: 0;
+        }
+
+        @include mixin.responsive(sm){
             margin: 0;
         }
 
@@ -36,6 +50,10 @@
                     font-size: 1.5rem;
                 }
 
+                @include mixin.responsive(sm){
+                    font-size: 1.5rem;
+                }
+
 
             }
             p{
@@ -43,6 +61,10 @@
                 color: rgb(204, 204, 204);
 
                 @include mixin.responsive(xs){
+                    font-size: 0.9rem;
+                }
+
+                @include mixin.responsive(sm){
                     font-size: 0.9rem;
                 }
 

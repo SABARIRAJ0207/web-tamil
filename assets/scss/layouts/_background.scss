@@ -71,7 +71,7 @@
     .dot2{
         position: absolute;
         top: 17%;
-        left: 50%;
+        left: 95%;
         width: 8px;
         height: 8px;
         background-color: #fd3f9e;
@@ -126,6 +126,9 @@
         color: rgb(255, 0, 149);
         animation: box-shape linear 5s infinite;
 
+        @include mixin.responsive(sm){
+            top: 40%;
+        }
     }
 
     
@@ -146,7 +149,7 @@
         
             position: absolute;
             top: 80%;
-            left: 31%;
+            left: 21%;
             width: 15px;
             height: 15px;
             
@@ -175,6 +178,7 @@
         transform: rotate(360deg);
         animation: box-shape linear 5s infinite;
     
+       
 }
 
 

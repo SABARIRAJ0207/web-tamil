@@ -8,10 +8,16 @@
 
     @include mixin.responsive(xs){
         padding: 4rem 2rem;
-        flex-direction: column;
+        flex-direction: column; 
+    }
 
+    @include mixin.responsive(sm){
+        padding: 4rem 2rem;
+        flex-direction: column; 
+    }
 
-       
+    img{
+        width: 25rem;
     }
 
     &-contants{
@@ -24,13 +30,16 @@
 
         @include mixin.responsive(xs){
         font-size: 2rem;
-
-
         }
+
+        @include mixin.responsive(sm){
+            font-size: 1.5rem;
+            }
 
  & > span{
     font-size: 1.5rem;
-    
+
+  
 } 
 
     }
@@ -43,6 +52,11 @@
         @include mixin.responsive(xs){
             font-size: 0.9rem;
         }
+
+        @include mixin.responsive(sm){
+            font-size: 0.9rem;
+        }
     }
+
 }
 
