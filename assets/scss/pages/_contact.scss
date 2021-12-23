@@ -14,7 +14,10 @@
 
      @include mixin.responsive(lg){
         padding: 8rem 6rem;
+        
      }
+
+     
 
      @include mixin.responsive(xxl){
         padding: 8rem 20rem;
@@ -55,6 +58,7 @@
             @include mixin.responsive(lg){
                 width: 30rem;
              }
+             
          }
 
 
