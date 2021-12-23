@@ -34,6 +34,13 @@
     padding: 1rem 15rem;
     
 }
+
+
+@include mixin.responsive(xxl) {
+    padding: 1rem 20rem;
+    
+}
+
 h2 > span{
     @include mixin.responsive(xs) {
         font-size: 1rem;

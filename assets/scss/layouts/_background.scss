@@ -1,7 +1,7 @@
 @use  "../abstract/mixin" as mixin;
 
 .background-shapes{
-    flex-basis: 100%;
+    // flex-basis: 100%;
     @include mixin.responsive(xs){
         display: none;
     }
@@ -18,11 +18,17 @@
         z-index: -1;
         transform: rotate(360deg);
         animation: box-shape linear 5s infinite;
+
+        @include mixin.responsive(xl){
+            top: 55%;
+            left: 16%;
+        }
+        
     }
 
     .box2{
         position: absolute;
-        top: 60%;
+        top: 80%;
         left: 50%;
         width: 15px;
         height: 15px;
@@ -33,6 +39,18 @@
         z-index: -1;
         transform: rotate(360deg);
         animation: box-shape linear 5s infinite;
+
+        @include mixin.responsive(md){
+            top: 155%;
+            left: 55%;
+        }
+
+        @include mixin.responsive(xl){
+            top: 95%;
+            left: 55%;
+        }
+
+
     }
 
     .box3{
@@ -48,6 +66,16 @@
         z-index: -1;
         transform: rotate(360deg);
         animation: box-shape linear 5s infinite;
+
+        @include mixin.responsive(md){
+            top: 95%;
+            left: 80%;
+        }
+        @include mixin.responsive(xl){
+            top: 17%;
+            left: 80%;
+        }
+
     }
 
 
@@ -55,7 +83,7 @@
 
     .dot1{
         position: absolute;
-        top: 57%;
+        top: 77%;
         left: 10%;
         width: 8px;
         height: 8px;
@@ -66,6 +94,17 @@
         z-index: -1;
         transform: rotate(360deg);
         animation: box-shape linear 5s infinite;
+
+        @include mixin.responsive(md){
+            top: 130%;
+            left: 10%;
+        }
+
+        @include mixin.responsive(xl){
+            top: 88%;
+            left: 13%;
+        }
+
     }
 
     .dot2{
@@ -82,13 +121,19 @@
         transform: rotate(360deg);
         animation: box-shape linear 5s infinite;
 
-        @include mixin.responsive(sm){
-            top: 22%;
-            left: 80%;
+        @include mixin.responsive(md){
+            top: 65%;
+            left: 70%;
         }
 
-        @include mixin.responsive(md){
-            top: 15%;
+
+        @include mixin.responsive(lg){
+            top: 27%;
+        }
+
+        @include mixin.responsive(xl){
+            top: 30%;
+            left: 60%;
         }
     }
 
@@ -106,6 +151,11 @@
         z-index: -1;
         transform: rotate(360deg);
         animation: box-shape linear 5s infinite;
+
+        @include mixin.responsive(xl){
+            top: 28%;
+            left: 25%;
+        }
     }
 
 
@@ -122,6 +172,18 @@
         z-index: -1;
         transform: rotate(360deg);
         animation: box-shape linear 5s infinite;
+
+        @include mixin.responsive(md){
+            top: 130%;
+            left: 80%;
+        }
+
+        @include mixin.responsive(xl){
+            top: 97%;
+            left: 80%;
+        }
+
+
     }
 
 
@@ -135,13 +197,18 @@
         color: rgb(255, 0, 149);
         animation: box-shape linear 5s infinite;
 
-        @include mixin.responsive(sm){
-            top: 40%;
+        @include mixin.responsive(md){
+            top: 75%;
         }
 
         @include mixin.responsive(lg){
             top: 40%;
             left: 5%;
+        }
+
+        @include mixin.responsive(xl){
+            top: 20%;
+            left: 8%;
         }
 
         
@@ -156,7 +223,11 @@
         z-index: -1;
         color: rgb(255, 0, 149);
         animation: box-shape linear 5s infinite;
-        
+
+        @include mixin.responsive(md){
+            top: 35%;
+            right: 10%;
+        }
 
         @include mixin.responsive(lg){
             top: 60%;
@@ -165,7 +236,7 @@
 
         @include mixin.responsive(xl){
             top: 55%;
-            right: 5%;
+            right: 10%;
         }
 
     }
@@ -187,11 +258,18 @@
             transform: rotate(360deg);
             animation: box-shape linear 5s infinite;
         
+            @include mixin.responsive(md){
+                top: 90%;
+                left: 29%;
+            }
+
+            @include mixin.responsive(xl){
+                top: 90%;
+                left: 29%;
+            }
     }
 
     .circle2{
-
-        
         position: absolute;
         top: 24%;
         left: 52%;
@@ -206,11 +284,18 @@
         animation: box-shape linear 5s infinite;
     
         @include mixin.responsive(md){
-           top: 10%;
+            top: 24%;
+            left: 56%;
         }
 
+       
+
         @include mixin.responsive(lg){
-            top: 15%;
+            top: 20%;
+        }
+        @include mixin.responsive(xl){
+            top: 23%;
+            left: 40%;
         }
 }
 

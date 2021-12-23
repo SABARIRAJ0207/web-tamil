@@ -16,6 +16,10 @@
         padding: 8rem 6rem;
      }
 
+     @include mixin.responsive(xxl){
+        padding: 8rem 20rem;
+     }
+
     &-card{
 
        
@@ -68,6 +72,10 @@
                 @include mixin.responsive(sm){
                     font-size: 1rem;
                 }
+
+                @include mixin.responsive(xxl){
+                    font-size: 1.2rem;
+                }
             }
             p{
                 color: gray;
@@ -78,6 +86,12 @@
                 @include mixin.responsive(sm){
                     font-size: 0.9rem;
                 }
+
+                @include mixin.responsive(xxl){
+                    font-size: 1rem;
+                }
+
+
             }
 
         }

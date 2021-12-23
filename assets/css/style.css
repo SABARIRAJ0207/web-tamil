@@ -130,6 +130,11 @@ a {
     padding: 1rem 15rem;
   }
 }
+@media only screen and (min-width: 1400px) {
+  .header {
+    padding: 1rem 20rem;
+  }
+}
 @media only screen and (max-width: 576px) {
   .header h2 > span {
     font-size: 1rem;
@@ -190,9 +195,6 @@ a {
   color: #3f43fd;
 }
 
-.background-shapes {
-  flex-basis: 100%;
-}
 @media only screen and (max-width: 576px) {
   .background-shapes {
     display: none;
@@ -211,9 +213,15 @@ a {
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
+@media only screen and (min-width: 1200px) {
+  .background-shapes .box1 {
+    top: 55%;
+    left: 16%;
+  }
+}
 .background-shapes .box2 {
   position: absolute;
-  top: 60%;
+  top: 80%;
   left: 50%;
   width: 15px;
   height: 15px;
@@ -223,6 +231,18 @@ a {
   z-index: -1;
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
+}
+@media only screen and (min-width: 768px) {
+  .background-shapes .box2 {
+    top: 155%;
+    left: 55%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .background-shapes .box2 {
+    top: 95%;
+    left: 55%;
+  }
 }
 .background-shapes .box3 {
   position: absolute;
@@ -237,9 +257,21 @@ a {
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
+@media only screen and (min-width: 768px) {
+  .background-shapes .box3 {
+    top: 95%;
+    left: 80%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .background-shapes .box3 {
+    top: 17%;
+    left: 80%;
+  }
+}
 .background-shapes .dot1 {
   position: absolute;
-  top: 57%;
+  top: 77%;
   left: 10%;
   width: 8px;
   height: 8px;
@@ -248,6 +280,18 @@ a {
   z-index: -1;
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
+}
+@media only screen and (min-width: 768px) {
+  .background-shapes .dot1 {
+    top: 130%;
+    left: 10%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .background-shapes .dot1 {
+    top: 88%;
+    left: 13%;
+  }
 }
 .background-shapes .dot2 {
   position: absolute;
@@ -261,15 +305,21 @@ a {
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
-@media only screen and (min-width: 576px) {
-  .background-shapes .dot2 {
-    top: 22%;
-    left: 80%;
-  }
-}
 @media only screen and (min-width: 768px) {
   .background-shapes .dot2 {
-    top: 15%;
+    top: 65%;
+    left: 70%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .background-shapes .dot2 {
+    top: 27%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .background-shapes .dot2 {
+    top: 30%;
+    left: 60%;
   }
 }
 .background-shapes .dot3 {
@@ -284,6 +334,12 @@ a {
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
+@media only screen and (min-width: 1200px) {
+  .background-shapes .dot3 {
+    top: 28%;
+    left: 25%;
+  }
+}
 .background-shapes .dot4 {
   position: absolute;
   top: 61%;
@@ -296,6 +352,18 @@ a {
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
+@media only screen and (min-width: 768px) {
+  .background-shapes .dot4 {
+    top: 130%;
+    left: 80%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .background-shapes .dot4 {
+    top: 97%;
+    left: 80%;
+  }
+}
 .background-shapes .heart1 {
   font-size: 1.5rem;
   position: absolute;
@@ -305,15 +373,21 @@ a {
   color: #ff0095;
   animation: box-shape linear 5s infinite;
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   .background-shapes .heart1 {
-    top: 40%;
+    top: 75%;
   }
 }
 @media only screen and (min-width: 992px) {
   .background-shapes .heart1 {
     top: 40%;
     left: 5%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .background-shapes .heart1 {
+    top: 20%;
+    left: 8%;
   }
 }
 .background-shapes .heart2 {
@@ -325,6 +399,12 @@ a {
   color: #ff0095;
   animation: box-shape linear 5s infinite;
 }
+@media only screen and (min-width: 768px) {
+  .background-shapes .heart2 {
+    top: 35%;
+    right: 10%;
+  }
+}
 @media only screen and (min-width: 992px) {
   .background-shapes .heart2 {
     top: 60%;
@@ -334,7 +414,7 @@ a {
 @media only screen and (min-width: 1200px) {
   .background-shapes .heart2 {
     top: 55%;
-    right: 5%;
+    right: 10%;
   }
 }
 .background-shapes .circle1 {
@@ -348,6 +428,18 @@ a {
   z-index: -1;
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
+}
+@media only screen and (min-width: 768px) {
+  .background-shapes .circle1 {
+    top: 90%;
+    left: 29%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .background-shapes .circle1 {
+    top: 90%;
+    left: 29%;
+  }
 }
 .background-shapes .circle2 {
   position: absolute;
@@ -363,12 +455,19 @@ a {
 }
 @media only screen and (min-width: 768px) {
   .background-shapes .circle2 {
-    top: 10%;
+    top: 24%;
+    left: 56%;
   }
 }
 @media only screen and (min-width: 992px) {
   .background-shapes .circle2 {
-    top: 15%;
+    top: 20%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .background-shapes .circle2 {
+    top: 23%;
+    left: 40%;
   }
 }
 
@@ -386,6 +485,11 @@ footer {
 @media only screen and (min-width: 576px) {
   footer h2 {
     font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  footer h2 {
+    font-size: 1.5rem;
   }
 }
 footer p {
@@ -1090,7 +1194,6 @@ footer .legal {
 .hero-area {
   padding: 8rem 20rem;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -1114,12 +1217,28 @@ footer .legal {
 }
 @media only screen and (min-width: 1200px) {
   .hero-area {
-    padding: 8rem 15rem;
+    padding: 6rem 15rem;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .hero-area {
+    padding: 8rem 20rem;
     justify-content: space-between;
   }
 }
 .hero-area img {
   width: 25rem;
+}
+@media only screen and (min-width: 1200px) {
+  .hero-area img {
+    width: 30rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .hero-area img {
+    width: 40rem;
+  }
 }
 .hero-area-contants {
   max-width: 34rem;
@@ -1127,6 +1246,11 @@ footer .legal {
 @media only screen and (min-width: 992px) {
   .hero-area-contants {
     max-width: 25rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .hero-area-contants {
+    max-width: 40rem;
   }
 }
 .hero-area-title {
@@ -1148,13 +1272,23 @@ footer .legal {
     font-size: 2rem;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   .hero-area-title {
     font-size: 2.5rem;
   }
 }
+@media only screen and (min-width: 1400px) {
+  .hero-area-title {
+    font-size: 3rem;
+  }
+}
 .hero-area-title > span {
   font-size: 1.5rem;
+}
+@media only screen and (min-width: 1400px) {
+  .hero-area-title > span {
+    font-size: 3rem;
+  }
 }
 .hero-area-desc {
   margin-top: 2rem;
@@ -1175,6 +1309,11 @@ footer .legal {
 @media only screen and (min-width: 992px) {
   .hero-area-desc {
     font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .hero-area-desc {
+    font-size: 1.2rem;
   }
 }
 
@@ -1211,6 +1350,11 @@ footer .legal {
 @media only screen and (min-width: 1200px) {
   .about-area {
     padding: 8rem 15rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .about-area {
+    padding: 8rem 20rem;
   }
 }
 .about-area-img {
@@ -1257,6 +1401,11 @@ footer .legal {
     font-size: 1.5rem;
   }
 }
+@media only screen and (min-width: 1400px) {
+  .about-area-contents h2 {
+    font-size: 3rem;
+  }
+}
 .about-area-contents p {
   line-height: 2;
   color: #cccccc;
@@ -1298,7 +1447,12 @@ footer .legal {
 }
 @media only screen and (min-width: 1200px) {
   .roadmap {
-    padding: 8rem 15rem;
+    padding: 8rem 4rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .roadmap {
+    padding: 8rem 10rem;
   }
 }
 .roadmap-heading {
@@ -1382,6 +1536,11 @@ footer .legal {
     font-size: 1rem;
   }
 }
+@media only screen and (min-width: 1400px) {
+  .roadmap-item-content h5 {
+    font-size: 1.5rem;
+  }
+}
 .roadmap-item-content p {
   color: gray;
   line-height: 1.5;
@@ -1389,6 +1548,11 @@ footer .legal {
 @media only screen and (min-width: 992px) {
   .roadmap-item-content p {
     font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .roadmap-item-content p {
+    font-size: 1rem;
   }
 }
 .roadmap-item:not(:last-child)::before {
@@ -1462,6 +1626,13 @@ footer .legal {
     left: -20%;
   }
 }
+@media only screen and (min-width: 1400px) {
+  .roadmap-item:hover:last-child::after {
+    top: 35%;
+    right: -30%;
+    left: auto;
+  }
+}
 .roadmap-item:hover h5 {
   color: #3f43fd;
 }
@@ -1490,7 +1661,12 @@ footer .legal {
 }
 @media only screen and (min-width: 1200px) {
   .course {
-    padding: 8rem 15rem;
+    padding: 8rem 4rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .course {
+    padding: 8rem 10rem;
   }
 }
 .course-heading {
@@ -1510,6 +1686,11 @@ footer .legal {
     font-size: 1.5rem;
   }
 }
+@media only screen and (min-width: 1400px) {
+  .course-heading h2 {
+    font-size: 2rem;
+  }
+}
 .course-heading p {
   color: #dfdfdf;
 }
@@ -1523,9 +1704,14 @@ footer .legal {
     font-size: 0.9rem;
   }
 }
+@media only screen and (min-width: 1400px) {
+  .course-heading p {
+    font-size: 1rem;
+  }
+}
 .course-cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 @media only screen and (max-width: 576px) {
   .course-cards {
@@ -1546,7 +1732,7 @@ footer .legal {
 }
 .course-card {
   background-color: #fff;
-  max-width: 380px;
+  max-width: 350px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -1555,12 +1741,22 @@ footer .legal {
     max-width: 280px;
   }
 }
+@media only screen and (min-width: 1400px) {
+  .course-card {
+    max-width: 350px;
+  }
+}
 .course-card-img {
-  width: 380px;
+  width: 350px;
 }
 @media only screen and (min-width: 992px) {
   .course-card-img {
     max-width: 280px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .course-card-img {
+    max-width: 350px;
   }
 }
 .course-card-body {
@@ -1584,6 +1780,11 @@ footer .legal {
     font-size: 1rem;
   }
 }
+@media only screen and (min-width: 1400px) {
+  .course-card-body h4 {
+    font-size: 1.5rem;
+  }
+}
 .course-card-body p {
   color: gray;
   line-height: 1.5;
@@ -1601,6 +1802,11 @@ footer .legal {
 @media only screen and (min-width: 992px) {
   .course-card-body p {
     font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .course-card-body p {
+    font-size: 1rem;
   }
 }
 .course-card a {
@@ -1637,6 +1843,11 @@ footer .legal {
 @media only screen and (min-width: 992px) {
   .contact {
     padding: 8rem 6rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .contact {
+    padding: 8rem 20rem;
   }
 }
 .contact-card {
@@ -1687,6 +1898,11 @@ footer .legal {
     font-size: 1rem;
   }
 }
+@media only screen and (min-width: 1400px) {
+  .contact-card-contant h4 {
+    font-size: 1.2rem;
+  }
+}
 .contact-card-contant p {
   color: gray;
 }
@@ -1698,6 +1914,11 @@ footer .legal {
 @media only screen and (min-width: 576px) {
   .contact-card-contant p {
     font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .contact-card-contant p {
+    font-size: 1rem;
   }
 }
 

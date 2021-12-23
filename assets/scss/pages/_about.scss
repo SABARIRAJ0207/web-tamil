@@ -34,9 +34,16 @@
         
     }
 
+    @include mixin.responsive(xxl){
+        padding: 8rem 20rem;
+        
+    }
+
 
     &-img{
         width: 32rem;
+
+        
         @include mixin.responsive(sm){
             width: 20rem;
         }
@@ -54,6 +61,7 @@
     &-contents{
 
         color: #fff;
+        
 
         @include mixin.responsive(xs){
             margin: 0;
@@ -62,6 +70,8 @@
         @include mixin.responsive(sm){
             margin: 0;
         }
+
+       
 
 
             h2{
@@ -73,6 +83,10 @@
 
                 @include mixin.responsive(sm){
                     font-size: 1.5rem;
+                }
+
+                @include mixin.responsive(xxl){
+                    font-size: 3rem;
                 }
 
 
@@ -87,6 +101,10 @@
 
                 @include mixin.responsive(sm){
                     font-size: 0.9rem;
+                }
+
+                @include mixin.responsive(xxlg){
+                    font-size: 1rem;
                 }
 
                 a{

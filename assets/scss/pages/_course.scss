@@ -8,18 +8,25 @@
 
   @include mixin.responsive(xs){
     padding: 4rem 2rem;
+    
  }
 
  @include mixin.responsive(sm){
   padding: 4rem 2rem;
+  
 }
 
 @include mixin.responsive(lg){
   padding: 8rem 4rem;
+     
 }
 
 @include mixin.responsive(xl){
-  padding: 8rem 15rem;
+  padding: 8rem 4rem;
+}
+
+@include mixin.responsive(xxl){
+  padding: 8rem 10rem;
 }
 
   &-heading {
@@ -35,6 +42,11 @@
       @include mixin.responsive(sm){
         font-size: 1.5rem;
       }
+
+      @include mixin.responsive(xxl){
+        font-size: 2rem;
+      }
+
     }
     p {
       color: rgb(223, 223, 223);
@@ -45,12 +57,16 @@
       @include mixin.responsive(sm){
         font-size: 0.9rem;
       }
+
+      @include mixin.responsive(xxl){
+        font-size: 1rem;
+      }
     }
   }
 
   &-cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     @include mixin.responsive(xs){
       flex-direction: column;
@@ -69,19 +85,28 @@
 
   &-card {
     background-color: #fff;
-    max-width: 380px;
+    max-width: 350px;
     border-radius: 10px;
     overflow: hidden;
 
     @include mixin.responsive(lg){
-     max-width: 280px;
-   }
+      max-width: 280px;
+    }
+
+   
+   @include mixin.responsive(xxl){
+    max-width: 350px;
+  }
 
     &-img {
-      width: 380px;
+      width: 350px;
 
       @include mixin.responsive(lg){
         max-width: 280px;
+      }
+      
+      @include mixin.responsive(xxl){
+        max-width: 350px;
       }
     }
 
@@ -100,6 +125,10 @@
             @include mixin.responsive(lg){
               font-size: 1rem;
             }
+
+            @include mixin.responsive(xxl){
+              font-size: 1.5rem;
+            }
          }
          p{
              color: gray;
@@ -114,6 +143,10 @@
 
             @include mixin.responsive(lg){
               font-size: 0.8rem;
+            }
+
+            @include mixin.responsive(xxl){
+              font-size: 1rem;
             }
 
          }
