@@ -14,6 +14,10 @@
   padding: 4rem 2rem;
 }
 
+@include mixin.responsive(lg){
+  padding: 8rem 4rem;
+}
+
   &-heading {
     text-align: center;
     h2 {
@@ -51,6 +55,12 @@
     flex-direction: column;
     align-items: center;
  }
+
+ @include mixin.responsive(lg){
+  flex-direction: row;
+  align-items: center;
+}
+
   }
 
   &-card {
@@ -59,8 +69,16 @@
     border-radius: 10px;
     overflow: hidden;
 
+    @include mixin.responsive(lg){
+     max-width: 280px;
+   }
+
     &-img {
       width: 380px;
+
+      @include mixin.responsive(lg){
+        max-width: 280px;
+      }
     }
 
     &-body {
@@ -74,6 +92,10 @@
              @include mixin.responsive(sm){
               font-size: 1.3rem;
             }
+
+            @include mixin.responsive(lg){
+              font-size: 1rem;
+            }
          }
          p{
              color: gray;
@@ -85,6 +107,11 @@
              @include mixin.responsive(sm){
               font-size: 0.9rem;
             }
+
+            @include mixin.responsive(lg){
+              font-size: 0.8rem;
+            }
+
          }
     }
 

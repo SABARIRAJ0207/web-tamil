@@ -12,11 +12,15 @@
         padding: 4rem 2rem;
     }
 
+    @include mixin.responsive(lg){
+        padding: 8rem 4rem;
+    }
+
 
     &-heading{
         text-align: center;
         h5{
-font-size: 2rem;
+            font-size: 2rem;
         }
 
         p{
@@ -38,6 +42,10 @@ font-size: 2rem;
             flex-direction: column;
         }
 
+        @include mixin.responsive(lg){
+            flex-direction:row;
+        }
+
     }
 
     &-item{
@@ -49,6 +57,12 @@ font-size: 2rem;
         max-width: 350px;
         filter: grayscale(100%);
         margin-left: 3rem;
+
+        @include mixin.responsive(lg){
+            max-width: 600px;
+            padding: 0;
+        }
+        
        
         &:hover &-img::after{
             animation: rotate-infinite 4000ms linear infinite;
@@ -84,12 +98,20 @@ font-size: 2rem;
             h5{
                 font-size: 1.5rem;
                 font-weight: 600;
+
+                @include mixin.responsive(lg){   
+                    font-size: 1rem;
+                }
             
             }
 
             p{
                 color: gray;
                 line-height: 1.5;
+
+                @include mixin.responsive(lg){   
+                    font-size: 0.9rem;
+                }
             }
         }
 
@@ -118,6 +140,13 @@ font-size: 2rem;
                 content: "\f107";
                 top: 90%;
                 left: 40%;
+             }
+
+             @include mixin.responsive(lg){
+                content: "";
+                top: 35%;
+                left: auto;
+                right:-30%;
              }
 
         }
@@ -154,6 +183,12 @@ font-size: 2rem;
                 
              }
 
+             @include mixin.responsive(lg){
+                
+                top: 100%;
+                left: -20%;
+                
+             }
             
         }
 

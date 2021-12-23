@@ -22,10 +22,21 @@
         // align-items: initial;
     }
 
+    @include mixin.responsive(lg){
+        padding: 8rem 6rem;
+        flex-direction: row;
+        margin-top: 0;
+        align-items: center;
+    }
+
     &-img{
         width: 32rem;
         @include mixin.responsive(sm){
             width: 20rem;
+        }
+
+        @include mixin.responsive(lg){
+            width: 64rem;
         }
 
     }

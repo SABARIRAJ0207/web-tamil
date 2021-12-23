@@ -15,6 +15,11 @@
         padding: 4rem 2rem;
         flex-direction: column; 
     }
+
+    @include mixin.responsive(lg){
+        padding: 8rem 6rem;
+        flex-direction: row;
+    }
     
 
     img{
@@ -23,6 +28,10 @@
 
     &-contants{
         max-width: 34rem;
+
+        @include mixin.responsive(lg){
+            max-width: 25rem;
+        }
     }
 
     &-title{
@@ -36,6 +45,10 @@
         @include mixin.responsive(sm){
             font-size: 1.5rem;
             }
+           
+         @include mixin.responsive(lg){
+            font-size: 2rem;
+        }
 
  & > span{
     font-size: 1.5rem;
@@ -56,6 +69,10 @@
 
         @include mixin.responsive(sm){
             font-size: 0.9rem;
+        }
+
+        @include mixin.responsive(lg){
+            font-size: 1rem;
         }
     }
 

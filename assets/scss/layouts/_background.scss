@@ -139,6 +139,11 @@
             top: 40%;
         }
 
+        @include mixin.responsive(lg){
+            top: 40%;
+            left: 5%;
+        }
+
         
     }
 
@@ -151,6 +156,12 @@
         z-index: -1;
         color: rgb(255, 0, 149);
         animation: box-shape linear 5s infinite;
+        
+
+        @include mixin.responsive(lg){
+            top: 60%;
+            right: 5%;
+        }
 
     }
 
@@ -191,6 +202,10 @@
     
         @include mixin.responsive(md){
            top: 10%;
+        }
+
+        @include mixin.responsive(lg){
+            top: 15%;
         }
 }
 
