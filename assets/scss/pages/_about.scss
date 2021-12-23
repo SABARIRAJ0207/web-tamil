@@ -29,6 +29,12 @@
         align-items: center;
     }
 
+    @include mixin.responsive(xl){
+        padding: 8rem 15rem;
+        
+    }
+
+
     &-img{
         width: 32rem;
         @include mixin.responsive(sm){
@@ -37,6 +43,10 @@
 
         @include mixin.responsive(lg){
             width: 64rem;
+        }
+
+        @include mixin.responsive(xl){
+            width: 100rem;
         }
 
     }

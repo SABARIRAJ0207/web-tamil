@@ -1,7 +1,7 @@
 @use  "../abstract/mixin" as mixin;
 
 .background-shapes{
-
+    flex-basis: 100%;
     @include mixin.responsive(xs){
         display: none;
     }
@@ -22,8 +22,8 @@
 
     .box2{
         position: absolute;
-        top: 80%;
-        left: 60%;
+        top: 60%;
+        left: 50%;
         width: 15px;
         height: 15px;
         background-color: transparent;
@@ -55,8 +55,8 @@
 
     .dot1{
         position: absolute;
-        top: 77%;
-        left: 6%;
+        top: 57%;
+        left: 10%;
         width: 8px;
         height: 8px;
         background-color: #3f43fd;
@@ -95,8 +95,8 @@
 
     .dot3{
         position: absolute;
-        top: 47%;
-        left: 55%;
+        top: 42%;
+        left: 50%;
         width: 8px;
         height: 8px;
         background-color: #3ffd78;
@@ -111,8 +111,8 @@
 
     .dot4{
         position: absolute;
-        top: 91%;
-        right: 9%;
+        top: 61%;
+        right: 29%;
         width: 8px;
         height: 8px;
         background-color: #3ffd78;
@@ -152,7 +152,7 @@
         font-size: 1.5rem;
         position: absolute;
         top: 55%;
-        left: 88%;
+        right: 8%;
         z-index: -1;
         color: rgb(255, 0, 149);
         animation: box-shape linear 5s infinite;
@@ -163,6 +163,11 @@
             right: 5%;
         }
 
+        @include mixin.responsive(xl){
+            top: 55%;
+            right: 5%;
+        }
+
     }
 
 
@@ -170,7 +175,7 @@
 
         
             position: absolute;
-            top: 80%;
+            top: 60%;
             left: 21%;
             width: 15px;
             height: 15px;

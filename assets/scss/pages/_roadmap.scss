@@ -16,6 +16,10 @@
         padding: 8rem 4rem;
     }
 
+    @include mixin.responsive(xl){
+        padding: 8rem 15rem;
+    }
+
 
     &-heading{
         text-align: center;

@@ -125,6 +125,11 @@ a {
     padding: 1rem 6rem;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .header {
+    padding: 1rem 15rem;
+  }
+}
 @media only screen and (max-width: 576px) {
   .header h2 > span {
     font-size: 1rem;
@@ -185,6 +190,9 @@ a {
   color: #3f43fd;
 }
 
+.background-shapes {
+  flex-basis: 100%;
+}
 @media only screen and (max-width: 576px) {
   .background-shapes {
     display: none;
@@ -205,8 +213,8 @@ a {
 }
 .background-shapes .box2 {
   position: absolute;
-  top: 80%;
-  left: 60%;
+  top: 60%;
+  left: 50%;
   width: 15px;
   height: 15px;
   background-color: transparent;
@@ -231,8 +239,8 @@ a {
 }
 .background-shapes .dot1 {
   position: absolute;
-  top: 77%;
-  left: 6%;
+  top: 57%;
+  left: 10%;
   width: 8px;
   height: 8px;
   background-color: #3f43fd;
@@ -266,8 +274,8 @@ a {
 }
 .background-shapes .dot3 {
   position: absolute;
-  top: 47%;
-  left: 55%;
+  top: 42%;
+  left: 50%;
   width: 8px;
   height: 8px;
   background-color: #3ffd78;
@@ -278,8 +286,8 @@ a {
 }
 .background-shapes .dot4 {
   position: absolute;
-  top: 91%;
-  right: 9%;
+  top: 61%;
+  right: 29%;
   width: 8px;
   height: 8px;
   background-color: #3ffd78;
@@ -312,7 +320,7 @@ a {
   font-size: 1.5rem;
   position: absolute;
   top: 55%;
-  left: 88%;
+  right: 8%;
   z-index: -1;
   color: #ff0095;
   animation: box-shape linear 5s infinite;
@@ -323,9 +331,15 @@ a {
     right: 5%;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .background-shapes .heart2 {
+    top: 55%;
+    right: 5%;
+  }
+}
 .background-shapes .circle1 {
   position: absolute;
-  top: 80%;
+  top: 60%;
   left: 21%;
   width: 15px;
   height: 15px;
@@ -1076,6 +1090,7 @@ footer .legal {
 .hero-area {
   padding: 8rem 20rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -1095,6 +1110,12 @@ footer .legal {
   .hero-area {
     padding: 8rem 6rem;
     flex-direction: row;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero-area {
+    padding: 8rem 15rem;
+    justify-content: space-between;
   }
 }
 .hero-area img {
@@ -1125,6 +1146,11 @@ footer .legal {
 @media only screen and (min-width: 992px) {
   .hero-area-title {
     font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero-area-title {
+    font-size: 2.5rem;
   }
 }
 .hero-area-title > span {
@@ -1182,6 +1208,11 @@ footer .legal {
     align-items: center;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .about-area {
+    padding: 8rem 15rem;
+  }
+}
 .about-area-img {
   width: 32rem;
 }
@@ -1193,6 +1224,11 @@ footer .legal {
 @media only screen and (min-width: 992px) {
   .about-area-img {
     width: 64rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .about-area-img {
+    width: 100rem;
   }
 }
 .about-area-contents {
@@ -1258,6 +1294,11 @@ footer .legal {
 @media only screen and (min-width: 992px) {
   .roadmap {
     padding: 8rem 4rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .roadmap {
+    padding: 8rem 15rem;
   }
 }
 .roadmap-heading {
@@ -1445,6 +1486,11 @@ footer .legal {
 @media only screen and (min-width: 992px) {
   .course {
     padding: 8rem 4rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .course {
+    padding: 8rem 15rem;
   }
 }
 .course-heading {
