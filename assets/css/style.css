@@ -115,6 +115,11 @@ a {
     padding: 1rem 2rem;
   }
 }
+@media only screen and (min-width: 768px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+}
 @media only screen and (max-width: 576px) {
   .header h2 > span {
     font-size: 1rem;
@@ -233,6 +238,17 @@ a {
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
+@media only screen and (min-width: 576px) {
+  .background-shapes .dot2 {
+    top: 22%;
+    left: 80%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .background-shapes .dot2 {
+    top: 15%;
+  }
+}
 .background-shapes .dot3 {
   position: absolute;
   top: 47%;
@@ -303,6 +319,11 @@ a {
   z-index: -1;
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
+}
+@media only screen and (min-width: 768px) {
+  .background-shapes .circle2 {
+    top: 10%;
+  }
 }
 
 footer {

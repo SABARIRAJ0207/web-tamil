@@ -81,6 +81,15 @@
         z-index: -1;
         transform: rotate(360deg);
         animation: box-shape linear 5s infinite;
+
+        @include mixin.responsive(sm){
+            top: 22%;
+            left: 80%;
+        }
+
+        @include mixin.responsive(md){
+            top: 15%;
+        }
     }
 
 
@@ -129,6 +138,8 @@
         @include mixin.responsive(sm){
             top: 40%;
         }
+
+        
     }
 
     
@@ -178,7 +189,9 @@
         transform: rotate(360deg);
         animation: box-shape linear 5s infinite;
     
-       
+        @include mixin.responsive(md){
+           top: 10%;
+        }
 }
 
 

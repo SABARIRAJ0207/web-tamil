@@ -20,6 +20,11 @@
     
 }
 
+@include mixin.responsive(md) {
+    padding: 1rem 2rem;
+    
+}
+
 h2 > span{
     @include mixin.responsive(xs) {
         font-size: 1rem;
@@ -43,6 +48,7 @@ h2 > span{
         font-size: 1.3rem;
         
     }
+  
 
 
     
@@ -61,6 +67,8 @@ h2 > span{
         @include mixin.responsive(sm){
             display: none;
         }
+
+       
 
         &-item > a {
             margin-right: 1.5rem;
