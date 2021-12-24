@@ -83,7 +83,39 @@ h2 > span{
         text-transform: uppercase;
 
         @include mixin.responsive(xs){
+
             display: none;
+
+            position: fixed;
+            top: -100%;
+            left: 0;
+            background-color: func.theme-color('menu-bg');
+            width: 100vw;
+            height: 100vh;
+            z-index: 1;
+            transition: 500ms;
+
+            &.show{
+                display: block;
+                top: 64px;
+                text-align: center;
+
+            }
+
+            & li{
+                padding: 2rem;
+
+
+                a{
+                    color: #fff;
+
+                    &.active{
+                        
+                        color: #000;
+                    }
+                }
+            }
+           
         }
 
         @include mixin.responsive(sm){

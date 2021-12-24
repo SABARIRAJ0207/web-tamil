@@ -31,24 +31,25 @@
     <div>
 
       <div class="nav-toggler">
-        <i class="fas fa-bars"></i>
+        <i class="navIcon fas fa-bars"></i>
+        <i class=" navIcon fas fa-times  hidden" ></i>
       </div>
 
-      <ul class="header-menu">
+      <ul class="header-menu ">
         <li class="header-menu-item">
-          <a href="#" class="active">Home</a>
+          <a href="#home" class="active">Home</a>
         </li>
         <li class="header-menu-item">
-          <a href="#">About</a>
+          <a href="#about">About</a>
         </li>
         <li class="header-menu-item">
-          <a href="#">Roadmap</a>
+          <a href="#roadmap">Roadmap</a>
         </li>
         <li class="header-menu-item">
-          <a href="#">Course</a>
+          <a href="#course">Course</a>
         </li>
         <li>
-          <a href="#" class="btn-primary">Contact Us</a>
+          <a href="#contact" class="btn-primary">Contact Us</a>
         </li>
       </ul>
     </div>
@@ -64,7 +65,7 @@
   <!-- ========== Start Main  ========== -->
   <main>
     <!-- ========== Start Hero ========== -->
-    <section class="hero-area ">
+    <section class="hero-area " id="home">
       <div class="background-shapes">
         <div class="box1"></div>
         <div class="box2"></div>
@@ -119,7 +120,7 @@
 
 
     <!-- ========== Start about ========== -->
-    <section class="about-area space-x-4 space-y-5">
+    <section class="about-area space-x-4 space-y-5" id="about">
       <div>
         <img src="./assets/img/web-development-illustration.png" alt="web development illustration"
           class="about-area-img img-responsive" />
@@ -146,7 +147,7 @@
 
 
     <!-- ========== Start roadmap ========== -->
-    <section class="roadmap">
+    <section class="roadmap" id="roadmap">
       <div class="roadmap-heading space-y-1">
         <h2>Roadmap to Expertise</h2>
         <p>Start it slow, finish it with style</p>
@@ -191,7 +192,7 @@
 
 
     <!-- ========== Start course ========== -->
-    <section class="course">
+    <section class="course" id="course">
       <div class="course-heading  space-y-1">
         <h2>Free Courses to Enroll</h2>
         <p>Start from begining, no pre-requesties required.</p>
@@ -261,7 +262,7 @@
 
 
     <!-- ========== Start contact ========== -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="contact-card">
 
         <form class="contact-card-contant space-y-1" action="#" method="post">
@@ -340,6 +341,13 @@
     </div>
   </footer>
   <!-- ========== End Footer ========== -->
+
+
+
+  <!-- script -->
+
+
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
