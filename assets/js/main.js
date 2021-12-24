@@ -37,4 +37,41 @@ function navbarFixed(){
    });
 }
 
+function setMenuActive(){
+   const sections =  document.querySelectorAll("section");
+
+    const navLink =   document.querySelectorAll(".header-menu-item>a");
+    
+    window.addEventListener("scroll" , () => {
+
+        let current = "";
+
+        sections.forEach((section) => {
+        const sectionTop = section.offsetTop ;
+        const sectionHeight = section.clientHeight;
+
+        if (pageYOffset >= sectionTop - sectionHeight / 3){
+            current = section.getAttribute("id")
+
+            
+        }
+    });
+
+    navLink.forEach((li) => {
+
+       li.classList.remove("active");
+
+        if(current == li.getAttribute("href").split("#")[1]){
+            li.classList.add("active")
+        }
+    });
+});
+
+
+    
+}
+
+
+
 navbarFixed();
+setMenuActive();
