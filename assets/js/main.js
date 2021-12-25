@@ -1,9 +1,10 @@
 const navToggler = document.querySelector('.nav-toggler');
+const navLink =   document.querySelectorAll(".header-menu>li>a");
 
+navToggler.addEventListener('click', changeMenuState);
 
-navToggler.addEventListener('click', () => {
-   
-   const headerMenu = document.querySelector('ul.header-menu');
+function changeMenuState(){
+    const headerMenu = document.querySelector('ul.header-menu');
   
   const navIcon = document.querySelectorAll('.navIcon');
    
@@ -14,8 +15,7 @@ navToggler.addEventListener('click', () => {
     navIcon.forEach(icon => {
         icon.classList.toggle('hidden');
     });
-
-});
+}
 
 function navbarFixed(){
    const header_dom = document.querySelector('.header');
@@ -40,7 +40,7 @@ function navbarFixed(){
 function setMenuActive(){
    const sections =  document.querySelectorAll("section");
 
-    const navLink =   document.querySelectorAll(".header-menu-item>a");
+    
     
     window.addEventListener("scroll" , () => {
 
@@ -65,13 +65,22 @@ function setMenuActive(){
             li.classList.add("active")
         }
     });
-});
-
-
-    
+});   
 }
+
+function onMenuClick(){
+    console.log(navLink);
+    for(let i=0; i < navLink.length; i++){
+
+        navLink[i].addEventListener("click" , changeMenuState)
+
+    }
+
+}
+
 
 
 
 navbarFixed();
 setMenuActive();
+onMenuClick();
